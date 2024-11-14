@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    background-color: lavender;
+    min-width: fit-content;
+}
+
+body { --bs-body-font-family: "Open Sans", sans-serif;
+}
+
+.bigtext {
+    font-size: clamp(2.6rem, 2.4305rem + 0.904vw, 4.6rem); /* tamanho do texto altera consoante a largura da janela */
+    color: white;
+    font-weight: 700;
+}
+
+/*------------------HEADER------------------*/
+
+header {
+    background-image: url('imagens/topo-fundo.jpg');
+    background-size: cover;
+    text-transform: uppercase;
+    min-height: clamp(26rem, 24.8136rem + 6.3277vw, 40rem); /* altura da header aumenta para ficar melhor em ecrãs largos */
+
+    & p {
+        color: white;
+        font-size: 0.85rem;
+        max-width: 700px;
+    }
+
+    & hr {
+        background: white;
+        height: 2px;
+        margin: auto;
+        width: 130px;
+        border: none;
+        opacity: 1;
+    }
+}
+
+.container {
+    max-width: 700px;
+    box-sizing: border-box;
+    border: 0px solid pink;
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-image: url(imagens/separador.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+/*------------------BOTOES------------------*/
+
+.btn-primary {
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #33afde;
+    border: none;
+    font-weight: 500;
+}
+
+.btn-secondary {
+    border-radius: 2px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    background-color: #5e6674;
+    border: none;
+    font-weight: 600;
+}
+.btn-secondary:hover {
+    background-color: #393f44;
+}
+
+& .btn-outline-light {
+    border-radius: 2px;
+    background: rgba(255,255,255,0.2);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 600;
+
+}
+
+/*------------------SERVICES------------------*/
+
+#services {
+    min-height: clamp(21.875rem, 20.7627rem + 5.9322vw, 35rem); /* altura da seccao aumenta para ficar melhor em ecrãs largos */
+    & span {
+        color: #33afde;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+}
+
+/*------------------ABOUT US------------------*/
+
+#about {
+    background-image: url('imagens/texto-fundo.jpg');
+    background-size: cover;
+    min-height: clamp(19rem, 17.6441rem + 7.2316vw, 35rem);
+    & h3 {
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    & p {
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    & hr {
+        margin: auto;
+        background: #33afde;
+        height: 2px;
+        width: 50px;
+        border: none;
+        opacity: 1;
+    }
+    & .bluee {
+        color: #33afde;
+    }
+}
+
+/*------------------NUMEROS------------------*/
+
+#numbers {
+    background-image: url('imagens/numeros-fundo.jpg');
+    background-size: cover;
+    min-height: clamp(11.875rem, 11.2924rem + 3.1073vw, 18.75rem);
+    color: white;
+    & .number {
+        font-weight: 300;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+    }
+}
+
+
+/*------------------BLOG------------------*/
+
+#blog {
+    & .blogpost {
+        background-color: #f3f3f3;
+        align-self: center;
+        justify-self: center;
+    }
+    & .titlepost {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    & p {
+        font-size: 0.8rem;
+        font-weight: 500;
+        max-width: 255px;
+    }
+}
+
+.cover {
+object-fit: cover;
+}
+
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/*------------------PRECOS------------------*/
+
+#precos {
+    background-image: url('imagens/precos_fundo.jpg');
+    background-size: cover;
+    min-height: clamp(19rem, 17.6441rem + 7.2316vw, 35rem);
+    & .package {
+        background-color: #f3f3f3;
+    }
+    & ul {
+        margin-top: -0.5rem;
+        list-style-position: outside;
+        list-style-type: none;
+        padding: 0;
+        font-size: 0.9rem;
+        color: #999999;
+    }
+    & li {
+        margin-bottom: 0.3rem;
+    }
+    & h3 {
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: white;
+    }
+}
+
+.circulo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 600;
+    color:white;
+    background:#5e6674;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.circulocentro {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 600;
+    color:white;
+    background:#33afde;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+/*------------------FOOTER------------------*/
+
+
+footer {
+    background:#33afde;
+    color:white;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    & ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    & li a {
+        display: flex; /* os icones fontawesome nao sao quadrados, */
+        justify-content: center; /* entao usei flex para alinhar ao centro facilmente */
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        margin-right: 0.3rem;
+        color: white;
+        text-decoration: none;
+    }
+}
